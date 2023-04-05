@@ -1,9 +1,13 @@
 :root {
-  --one: #F7F2F4;
-  --two: #E6C3CF;
-  --three: #997984;
-  --four: #262123;
-  --five: #121011;
+  --pinkB: #FF4EFF;
+  --pinkD: #9E0084;
+  --orangeB: #FFE0CC;
+  --orangeD: #792934;
+  --greenB: #E5F3FC;
+  --greenD: #56A8B8;
+  --blueB: #AED3FE;
+  --blueD: #4875CC;
+  --black: #201734;
 }
 
 /*characters images
@@ -74,7 +78,7 @@
 /*front section*/
 
 #portada {
-  background: var(--two);
+  background: var(--black);
 }
 
 #portada .content {
@@ -94,7 +98,7 @@
 }
 
 #portada h1 {
-  color: var(--four);
+  color: var(--pinkB);
   font-size: 3em;
   font-weight: 500;
   margin-top: -5vh;
@@ -104,13 +108,13 @@
 
 #portada h2 {
   font-weight: 500;
-  color: var(--four);
+  color: var(--blueB);
   margin-bottom: 0;
 }
 
 #demo {
-  background-color: var(--three);
-  color: var(--one);
+  background-color: var(--black);
+  color: var(--greenB);
   margin: 0;
   padding: 0.3em;
   border-radius: 20px;
@@ -138,30 +142,30 @@
 }
 
 #audioBtn {
-  background-color: var(--one);
+  background-color: var(--black);
   margin: -5px 0 0 5px;
   padding: 0.7em;
   border-radius: 50%;
   border: none;
-  box-shadow: -9px 10px 11px -8px var(--three);
+  box-shadow: -9px 10px 11px -8px var(--pinkD);
   animation: buttonColor 2s linear 0s 3 normal;
 }
 
 #audioBtn:active {
   box-shadow: none;
-  background-color: var(--two);
+  background-color: var(--black);
 }
 
 @keyframes buttonColor {
   0% {
-    box-shadow: -9px 10px 11px -8px var(--three);
+    box-shadow: -9px 10px 11px -8px var(--pinkD);
   }
   50% {
-    box-shadow: -9px 10px 11px -8px var(--two);
-    background-color: var(--onw);
+    box-shadow: -9px 10px 11px -8px var(--pinkB);
+    background-color: var(--black);
   }
   100% {
-    box-shadow: -9px 10px 11px -8px var(--three);
+    box-shadow: -9px 10px 11px -8px var(--pinkD);
   }
 }
 
@@ -172,11 +176,11 @@
 /*address section*/
 
 #direccion {
-  background-color: var(--three);
+  background: var(--black);
 }
 
 #direccion p {
-  color: var(--one);
+  color: var(--blueB);
   font-size: 1.5em;
   line-break: auto;
   padding: 1em;
@@ -184,15 +188,15 @@
 }
 
 #mapa{
-  border-top: 5px dotted var(--one);
-  border-bottom: 5px dotted var(--one);
+  border-top: 5px dotted var(--pinkB);
+  border-bottom: 5px dotted var(--pinkB);
   padding-top: 5px;
 }
 
 /*party section*/
 
 #fiesta {
-  background-color: var(--two);
+  background: var(--black);
 }
 
 #fiesta .content{
@@ -206,7 +210,7 @@
 
 #fiesta * {
   font-weight: 100;
-  color: var(--one);
+  color: var(--orangeB);
 }
 
 .fiesta {
@@ -218,7 +222,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px dotted var(--one);
+  border: 5px dotted var(--greenB);
 }
 
 .fiesta *{
@@ -226,7 +230,7 @@
 }
 
 .fiesta p {
-  color: var(--two) !important;
+  color: var(--orangeB) !important;
 }
 
 .fiesta h3 {
@@ -257,7 +261,7 @@
 
 #copy{
   filter: brightness(200%);
-  background-color: var(--four);
+  background-color: var(--black);
   padding: 1em;
   border-radius: 10px;
   width: 4em;
@@ -270,8 +274,8 @@
 
 #remove {
   border: none;
-  background-color: var(--one);
-  color: var(--four) !important;
+  background-color: var(--black);
+  color: var(--orangeD) !important;
   font-weight: 100;
   padding: 1em;
   border-radius: 10px;
@@ -431,7 +435,7 @@
 /*confirm section*/
 
 #asistencia {
-  background: var(--two);
+  background: var(--black);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -442,12 +446,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--three);
+  background-color: var(--black);
   height: 90vh;
   border-radius: 20px;
-  border: 10px dotted var(--one);
+  border: 10px dotted var(--pinkB);
   padding: 1em;
-  color: var(--four);
+  color: var(--greenB);
 }
 
 #asistencia button {
@@ -457,14 +461,14 @@
   margin: 1em;
   gap: 1em;
   padding: 1em;
-  background-color: var(--two);
+  background-color: var(--black);
   border: none;
   border-radius: 10px;
 }
 
 #confirmA {
   text-decoration: none;
-  color: var(--four);
+  color: var(--orangeB);
   font-size: 1.5em;
   font-family: 'Tilt Neon', cursive;
 }
@@ -496,11 +500,11 @@
 }
 
 .one{
-  border-bottom: 15px dotted var(--three);
+  border-bottom: 15px dotted var(--orangeB);
 }
 
 .two{
-  border-bottom: 15px dotted var(--two);
+  border-bottom: 15px dotted var(--orangeB);
 }
 
 body {
@@ -546,23 +550,23 @@ body {
   }
 
   #portada .content {
-    background: var(--white);
+    background: var(--black);
   }
 
   #direccion .content {
-    background: var(--dark-pink);
+    background: var(--black);
   }
 
   #galeria .content {
-    background: var(--gray);
+    background: var(--black);
   }
 
   #fiesta .content {
-    background: var(--pink);
+    background: var(--black);
   }
 
   #asistencia .content {
-    background: var(--violet);
+    background: var(--black);
   }
   
   #photos {
