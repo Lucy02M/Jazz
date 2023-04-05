@@ -129,10 +129,12 @@
 .tiempos {
   font-size: 1.5em;
   margin: 0 10px 0 10px;
+  font-family: 'Tilt Neon', cursive;
 }
 
 .tiempoT {
   font-size: 0.4em;
+  font-family: 'Tilt Neon', cursive;
 }
 
 #audioBtn {
@@ -178,6 +180,7 @@
   font-size: 1.5em;
   line-break: auto;
   padding: 1em;
+  font-family: 'Tilt Neon', cursive;
 }
 
 #mapa{
@@ -218,12 +221,17 @@
   border: 5px dotted var(--one);
 }
 
+.fiesta *{
+  font-family: 'Tilt Neon', cursive;
+}
+
 .fiesta p {
   color: var(--two) !important;
 }
 
 .fiesta h3 {
   font-size: 1.5em;
+  font-family: 'Neonderthaw', cursive;
 }
 
 #pedirRegalo {
@@ -458,6 +466,7 @@
   text-decoration: none;
   color: var(--four);
   font-size: 1.5em;
+  font-family: 'Tilt Neon', cursive;
 }
 
 .tenor-gif-embed {
@@ -503,7 +512,7 @@ body {
 
 * {
   text-align: center;
-  font-family: "Sofia", cursive;
+  font-family: 'Neonderthaw', cursive;
 }
 
 /* Extra small devices (phones, 600px and down) */
