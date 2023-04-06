@@ -79,6 +79,8 @@
 
 #portada {
   background: var(--black);
+  background-size: contain;
+  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
 }
 
 #portada .content {
@@ -86,24 +88,28 @@
 }
 
 #foto {
-  border-radius: 20%;
   object-fit: cover;
   filter: contrast(40%);
   filter: brightness(130%);
   filter: saturate(1.5);
-  width: 20rem;
-  height: 20rem;
+  width: fit-content;
   margin-bottom: 0;
-  margin-top: -1em;
+  margin-top: -5em;
 }
 
 #portada h1 {
-  color: var(--pinkB);
-  font-size: 3em;
+  color: var(--orangeB);
+  font-size: 5em !important;
   font-weight: 500;
-  margin-top: -5vh;
+  margin-top: -15vh;
   border-radius: 20px;
   position: relative;
+  background-color: var(--black);
+  padding-bottom: 0.3em;
+  width: 3em;
+  margin-left: 17vw;
+  text-shadow: 0 0 5px var(--pinkB), 0 0 10px var(--pinkB), 0 0 15px var(--pinkB), 0 0 20px var(--pinkD), 0 0 30px var(--pinkD), 0 0 40px var(--pinkD), 0 0 55px var(--pinkD), 0 0 75px var(--pinkD);
+  box-shadow: var(--orangeB) 0 -1px 4px, var(--greenB) 0 -2px 10px, var(--blueB) 0 -10px 20px, var(--pinkB) 0 -18px 40px, 5px 5px 15px 5px var(--black);
 }
 
 #portada h2 {
@@ -113,7 +119,7 @@
 }
 
 #demo {
-  background-color: var(--black);
+  background-color: none;
   color: var(--greenB);
   margin: 0;
   padding: 0.3em;
@@ -124,6 +130,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 0;
+  border: 1px solid var(--orangeB);
+  box-shadow: inset 0px 0px 9px 2px var(--orangeD);
 }
 
 #audioDiv {
@@ -142,41 +150,55 @@
 }
 
 #audioBtn {
-  background-color: var(--black);
-  margin: -5px 0 0 5px;
+  background-color: var(--pinkB);
+  border: 1px solid var(--pinkD);
+  z-index: 1;
+  margin: 4px 0 0 10px;
   padding: 0.7em;
   border-radius: 50%;
-  border: none;
-  box-shadow: -9px 10px 11px -8px var(--pinkD);
+  box-shadow: 0px 0px 9px 2px var(--pinkD);
   animation: buttonColor 2s linear 0s 3 normal;
+  position: absolute;
 }
 
 #audioBtn:active {
   box-shadow: none;
-  background-color: var(--black);
+  background-color: var(--pinkD);
 }
 
 @keyframes buttonColor {
   0% {
-    box-shadow: -9px 10px 11px -8px var(--pinkD);
+    box-shadow: 0px 0px 9px 2px var(--pinkD);
   }
   50% {
-    box-shadow: -9px 10px 11px -8px var(--pinkB);
-    background-color: var(--black);
+    box-shadow: 0px 0px 9px 2px var(--pinkB);
+    background-color: var(--pinkD);
   }
   100% {
-    box-shadow: -9px 10px 11px -8px var(--pinkD);
+    box-shadow: 0px 0px 9px 2px var(--pinkD);
   }
 }
 
 #audioBtn:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
+}
+
+#audioImg{
+  color: white;
+  transform: scale(1.5);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 500,
+  'opsz' 48;
 }
 
 /*address section*/
 
 #direccion {
   background: var(--black);
+  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
+  background-size: contain;
 }
 
 #direccion p {
@@ -185,11 +207,12 @@
   line-break: auto;
   padding: 1em;
   font-family: 'Tilt Neon', cursive;
+  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
 }
 
 #mapa{
-  border-top: 5px dotted var(--pinkB);
-  border-bottom: 5px dotted var(--pinkB);
+  border-top: 5px double var(--pinkB);
+  border-bottom: 5px double var(--pinkB);
   padding-top: 5px;
 }
 
@@ -197,6 +220,8 @@
 
 #fiesta {
   background: var(--black);
+  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
+  background-size: contain;
 }
 
 #fiesta .content{
@@ -214,7 +239,6 @@
 }
 
 .fiesta {
-  background-color: var(--three);
   padding: 0.3em;
   border-radius: 20%;
   width: 90vw;
@@ -222,7 +246,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px dotted var(--greenB);
+  border: 5px double var(--greenB);
+  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
 }
 
 .fiesta *{
@@ -236,6 +261,17 @@
 .fiesta h3 {
   font-size: 1.5em;
   font-family: 'Neonderthaw', cursive;
+}
+
+ #regalo, #vestimenta{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 100,
+  'opsz' 48;
+  color: var(--blueB) !important;
+  transform: scale(4);
+  padding: 1em 0;
 }
 
 #pedirRegalo {
@@ -292,7 +328,14 @@
 
 #click {
   animation: click 2s ease 0s infinite normal forwards;
-  margin-left: 0;
+  margin-left: 1em;
+  transform: scale(1.8);
+  color: var(--pinkB);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 300,
+  'opsz' 48;
 }
 
 @keyframes click {
@@ -309,8 +352,8 @@
 }
 
 #regalo {
-  animation: gift 2s ease 10s infinite normal forwards;
-  margin-left: 3em;
+ /* animation: gift 2s ease 10s infinite normal forwards;*/
+  margin-left: 2em;
 }
 
 @keyframes gift {
@@ -345,7 +388,7 @@
   filter: opacity(50%);
 }
 
-/*gallery section*/
+/*gallery section
 
 #galeria {
   background-color: var(--three);
@@ -436,9 +479,13 @@
 
 #asistencia {
   background: var(--black);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 2em;
+  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
+  background-size: contain;
+}
+
+.h2asistencia{
+  font-weight: lighter;
 }
 
 #whiteBack {
@@ -449,7 +496,7 @@
   background-color: var(--black);
   height: 90vh;
   border-radius: 20px;
-  border: 10px dotted var(--pinkB);
+  border: 10px double var(--pinkB);
   padding: 1em;
   color: var(--greenB);
 }
@@ -461,9 +508,11 @@
   margin: 1em;
   gap: 1em;
   padding: 1em;
-  background-color: var(--black);
-  border: none;
   border-radius: 10px;
+  background-color: var(--black);
+  border: 1px solid var(--pinkB);
+  box-shadow: 0px 0px 9px 2px var(--pinkD);
+  box-shadow: inset 0px 0px 9px 2px var(--pinkD);
 }
 
 #confirmA {
@@ -480,15 +529,32 @@
 }
 
 #mensaje {
-  padding: 2em;
-}
-
-#endImg {
-  margin-top: 10vh;
+  padding: 0em 1em;
+  font-size: 1.9em;
+  font-weight: lighter;
 }
 
 #messImg{
-  filter: brightness(0%);
+  filter: brightness(170%);
+}
+
+#asistencia button:active {
+  box-shadow: none;
+  background-color: var(--pinkD);
+  transform: scale(0.9);
+}
+
+#asistencia button:hover {
+  cursor: pointer;
+}
+
+#imagesEnd{
+  display: flex;
+  margin-top: 20vh;
+}
+
+.starImg{
+  filter:brightness(100);
 }
 
 /*general*/
@@ -500,11 +566,11 @@
 }
 
 .one{
-  border-bottom: 15px dotted var(--orangeB);
+  border-bottom: 15px double var(--greenD);
 }
 
 .two{
-  border-bottom: 15px dotted var(--orangeB);
+  border-bottom: 15px double var(--greenD);
 }
 
 body {
@@ -533,10 +599,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("media/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
+    background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg") !important;
+    background-size: contain !important;
+
   }
   .content {
     width: 50vw;
@@ -550,23 +616,27 @@ body {
   }
 
   #portada .content {
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   }
 
   #direccion .content {
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   }
 
   #galeria .content {
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   }
 
   #fiesta .content {
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   }
 
   #asistencia .content {
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
+  }
+
+  #direccion p, .fiesta{
+    background: none;
   }
   
   #photos {

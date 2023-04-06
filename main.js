@@ -13,7 +13,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("demo").innerHTML =
-    "<div class='tiempos'>" +
+    "<div class='tiempos'>" + 
     days +
     "<p class='tiempoT'>Dias</p></div>" +
     "<div class='tiempos'>" +
@@ -39,11 +39,10 @@ var isPlaying = false;
 function togglePlay() {
   isPlaying ? myAudio.pause() : myAudio.play();
   let imgAudio = document.getElementById("audioImg");
-  let mySrc = imgAudio.getAttribute("src");
-  if (mySrc === "volume-up.png") {
-    imgAudio.setAttribute("src", "mute.png");
+  if (imgAudio.innerHTML === "volume_up") {
+    imgAudio.innerHTML= "volume_down";
   } else {
-    imgAudio.setAttribute("src", "volume-up.png");
+    imgAudio.innerHTML = "volume_up";
   }
 }
 
