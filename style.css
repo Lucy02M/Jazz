@@ -114,13 +114,15 @@
 
 #portada h2 {
   font-weight: 500;
-  color: var(--blueB);
+  color: var(--greenB);
+  font-size: 2.5em !important;
   margin-bottom: 0;
+  text-shadow: 0 0 3px var(--greenD), 0 0 5px var(--greenD), 0 0 7px var(--greenD), 0 0 10px var(--greenD), 0 0 12px var(--greenD), 0 0 15px var(--greenD), 0 0 17px var(--greenD), 0 0 20px var(--greenD);
 }
 
 #demo {
   background-color: none;
-  color: var(--greenB);
+  color: var(--orangeB);
   margin: 0;
   padding: 0.3em;
   border-radius: 20px;
@@ -130,8 +132,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 0;
-  border: 1px solid var(--orangeB);
-  box-shadow: inset 0px 0px 9px 2px var(--orangeD);
+  text-shadow: 4px 3px 0 var(--blueD), 2px 2px 6px rgba(124, 51, 105, 0);
 }
 
 #audioDiv {
@@ -205,14 +206,17 @@
   color: var(--blueB);
   font-size: 1.5em;
   line-break: auto;
-  padding: 1em;
+  padding: 3em 1em;
+  margin-top: -1em;
+  margin-bottom: 0;
   font-family: 'Tilt Neon', cursive;
   background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
+  text-shadow: 0 0 3px var(--blueD), 0 0 5px var(--blueD), 0 0 7px var(--blueD), 0 0 10px var(--blueD), 0 0 12px var(--blueD), 0 0 15px var(--blueD), 0 0 17px var(--blueD), 0 0 20px var(--blueD);
 }
 
 #mapa{
-  border-top: 5px double var(--pinkB);
-  border-bottom: 5px double var(--pinkB);
+  border-top: 5px double var(--blueB);
+  border-bottom: 5px double var(--blueB);
   padding-top: 5px;
 }
 
@@ -222,32 +226,38 @@
   background: var(--black);
   background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
   background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #fiesta .content{
-  padding-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 5vh;
+  width: 75vw;
+  height: 90vh;
+  border: 5px double var(--greenB);
+  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 5px 5px var(--greenB), inset 0px 0px 10px 9px var(--greenD);
 }
 
 #fiesta * {
   font-weight: 100;
   color: var(--orangeB);
+  text-shadow: 3px 2px 0 var(--black), 2px 2px 6px rgba(124, 51, 105, 0);
 }
 
 .fiesta {
-  padding: 0.3em;
-  border-radius: 20%;
-  width: 90vw;
+  width: 70vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px double var(--greenB);
-  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
+  margin-top: -5vh;
 }
 
 .fiesta *{
@@ -260,7 +270,9 @@
 
 .fiesta h3 {
   font-size: 1.5em;
+  color: var(--orangeB) !important;
   font-family: 'Neonderthaw', cursive;
+  text-shadow: 0 0 3px var(--orangeD), 0 0 5px var(--orangeD), 0 0 7px var(--orangeD), 0 0 10px var(--orangeD), 0 0 12px var(--orangeD), 0 0 15px var(--orangeD), 0 0 17px var(--orangeD), 0 0 20px var(--orangeD) !important;
 }
 
  #regalo, #vestimenta{
@@ -296,12 +308,13 @@
 }
 
 #copy{
-  filter: brightness(200%);
-  background-color: var(--black);
   padding: 1em;
   border-radius: 10px;
   width: 4em;
   height: 1.2em;
+  background:var(--orangeD);
+  border: 1px solid var(--orangeD);
+  box-shadow: 0px 0px 5px 1px var(--orangeD);
 }
 
 #copy:active {
@@ -309,14 +322,14 @@
 }
 
 #remove {
-  border: none;
-  background-color: var(--black);
-  color: var(--orangeD) !important;
   font-weight: 100;
   padding: 1em;
   border-radius: 10px;
   width: 4em;
   height: 1.2em;
+  background:none;
+  border: 1px solid var(--orangeD);
+  box-shadow: inset 0px 0px 5px 1px var(--orangeD);
 }
 
 #gimgDiv {
@@ -486,6 +499,8 @@
 
 .h2asistencia{
   font-weight: lighter;
+  text-shadow: 4px 3px 0 var(--blueD), 2px 2px 6px rgba(124, 51, 105, 0);
+  font-family: 'Tilt Neon', cursive;
 }
 
 #whiteBack {
@@ -493,12 +508,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--black);
+  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   height: 90vh;
   border-radius: 20px;
   border: 10px double var(--pinkB);
   padding: 1em;
   color: var(--greenB);
+  box-shadow: inset 0px 0px 5px 5px var(--orangeB), inset 0px 0px 10px 9px var(--pinkD);
 }
 
 #asistencia button {
@@ -509,9 +525,8 @@
   gap: 1em;
   padding: 1em;
   border-radius: 10px;
-  background-color: var(--black);
+  background:none;
   border: 1px solid var(--pinkB);
-  box-shadow: 0px 0px 9px 2px var(--pinkD);
   box-shadow: inset 0px 0px 9px 2px var(--pinkD);
 }
 
@@ -532,6 +547,8 @@
   padding: 0em 1em;
   font-size: 1.9em;
   font-weight: lighter;
+  color: var(--greenB);
+  text-shadow: 0 0 3px var(--greenD), 0 0 5px var(--greenD), 0 0 7px var(--greenD), 0 0 10px var(--greenD), 0 0 12px var(--greenD), 0 0 15px var(--greenD), 0 0 17px var(--greenD), 0 0 20px var(--greenD);
 }
 
 #messImg{
@@ -549,12 +566,9 @@
 }
 
 #imagesEnd{
-  display: flex;
-  margin-top: 20vh;
-}
+  height: 16em;
+  width: 16em;
 
-.starImg{
-  filter:brightness(100);
 }
 
 /*general*/
@@ -563,15 +577,18 @@
   height: 100vh;
   margin: 0;
   padding: 0;
+  border-bottom: 15px double var(--greenB);
+  overflow: hidden;
 }
 
 .one{
-  border-bottom: 15px double var(--greenD);
 }
 
 .two{
-  border-bottom: 15px double var(--greenD);
+  box-shadow: var(--orangeB) 0 -1px 4px, var(--greenB) 0 -2px 10px, var(--blueB) 0 -10px 20px, var(--pinkB) 0 -18px 40px, 5px 5px 15px 5px var(--black);
 }
+
+
 
 body {
   width: 100%;
