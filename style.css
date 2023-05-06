@@ -109,7 +109,8 @@
 }
 
 .sign-three{
-
+  margin-top: 10vh;
+  margin-left: -7vw;
 }
 
 .restaurant{
@@ -128,24 +129,12 @@
   .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
 }
 
-.bar {
-  color: #A9FFDC;
-  font-family: clipneon;
-  font-size: 4vw;
-  margin-left: 14vw;
-  margin-top: -.75vw;
-  text-shadow: 
-  -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #A9FFDC, 
-  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
-  -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
-  -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
-  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
-}
 
 .jackpots {
+  transform: skew(0deg, -8deg);
   font-family: moon;
-  font-size: 6.3vw;
-  margin-left: 1.5vw;
+  font-size: 9vw;
+  margin-left: 9vw;
   animation: jackpots 1s 0s ease infinite;
   -moz-animation: jackpots 1s 0s ease infinite;
   /* Firefox */
@@ -186,6 +175,50 @@
 
 .tiempoT {
   font-size: 0.4em;
+  margin-top: 0;
+}
+
+.sign-four {
+  -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1);
+  color: #F0D6DE !important;
+  font-family: clipneon;
+  font-size: 10vw;
+  line-height: 6vw !important;
+  margin-right: 2vw !important;
+  transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) ;
+  text-shadow: 
+  .1vw 0vw .25vw #F0D6DE, .2vw 0vw .25vw #F0D6DE, .4vw 0vw .25vw #F0D6DE, 
+  .1vw 0vw .1vw #F181B2, .2vw 0vw 0vw #F181B2, .4vw 0vw 0vw #F181B2,
+  .1vw 0vw .1vw #F181B2, .2vw 0vw .1vw #F181B2, .4vw 0vw 0vw #F181B2,
+  .1vw 0vw 1vw #F181B2, .2vw 0vw 2vw #F181B2, .4vw 0vw 2vw #F181B2, .2vw 0vw 5vw #F181B2,
+  .1vw 0vw .5vw #F20B70, .2vw 0vw .5vw #F20B70, .4vw 0vw 6vw #F20B70, 
+  .1vw 0vw 4vw #F20B70, .2vw 0vw 20vw #F20B70, .4vw 0vw 10vw #F20B70,
+  .1vw 0vw 10vw #F20B70, .2vw 0vw 30vw #F20B70, .4vw 0vw 10vw #F20B70 !important; 
+}
+
+.currency {
+  color: #FDF8FD !important;
+  font-size: 8vw;
+  margin-top: 2vh;
+  text-shadow: 
+  .1vw 0vw .25vw #FDF8FD, .2vw 0vw .25vw #FDF8FD, .4vw 0vw .25vw #FDF8FD, 
+  .1vw 0vw .1vw #F1EC81, .2vw 0vw 0vw #F1EC81, .4vw 0vw 0vw #F1EC81,
+  .1vw 0vw .1vw #F1EC81, .2vw 0vw .1vw #F1EC81, .4vw 0vw 0vw #F1EC81,
+  .1vw 0vw 1vw #F1EC81, .2vw 0vw 2vw #F1EC81, .4vw 0vw 2vw #F1EC81, .2vw 0vw 5vw #F1EC81,
+  .1vw 0vw .5vw #F2E90B, .2vw 0vw .5vw #F2E90B, .4vw 0vw 6vw #F2E90B, 
+  .1vw 0vw 2vw #F2E90B, .2vw 0vw 5vw #F2E90B, .4vw 0vw 0vw #F2E90B !important;
+}
+
+.fa-angle-double-down{
+  font-size: 3em;
+  margin-top: 2vh;
+  animation: jackpots 1s 0s ease infinite;
+  -moz-animation: jackpots 1s 0s ease infinite;
+  /* Firefox */
+  -webkit-animation: jackpots 1s 0s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: jackpots 1s 0s ease infinite;
+  /* Opera */
 }
 
 /*characters images
@@ -462,7 +495,6 @@
 }
 
 #fiesta * {
-  font-weight: 100;
   color: var(--orangeB);
   text-shadow: 3px 2px 0 var(--black), 2px 2px 6px rgba(124, 51, 105, 0);
 }
