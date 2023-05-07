@@ -28,6 +28,12 @@
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/lasenter.ttf);
 }
 
+body{
+  filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
+-webkit-filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
+-moz-filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
+}
+
 .sign-two {
   margin-top: 2vh;
   color: #A9FFDC;
@@ -454,7 +460,6 @@
 }
 
 #direccion p {
-  color: var(--blueB);
   font-size: 1.5em;
   line-break: auto;
   padding: 3em 1em;
@@ -462,7 +467,13 @@
   margin-bottom: 0;
   font-family: 'Orbitron', sans-serif;
   background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
-  text-shadow: 0 0 3px var(--blueD), 0 0 5px var(--blueD), 0 0 7px var(--blueD), 0 0 10px var(--blueD), 0 0 12px var(--blueD), 0 0 15px var(--blueD), 0 0 17px var(--blueD), 0 0 20px var(--blueD);
+  text-shadow: 
+  -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #011a10, 
+  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
+  -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
+  -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
+  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+  color: #A9FFDC;
 }
 
 #mapa{
@@ -479,11 +490,11 @@
 }
 
 .neon-circle {
-  -moz-box-shadow: 0px 0px 0px 8px rgba(254,208,40,1), 0px 0px 8px 10px rgba(240,19,11,1), inset 0px 0px 8px 4px rgba(240,19,11,1), 0px 0px 98px 8px rgba(250,29,22,1), inset 0px 0px 98px 8px rgba(250,29,22,1);
-  -webkit-box-shadow: 0px 0px 0px 8px rgba(254,208,40,1), 0px 0px 8px 10px rgba(240,19,11,1), inset 0px 0px 8px 4px rgba(240,19,11,1), 0px 0px 98px 8px rgba(250,29,22,1), inset 0px 0px 98px 8px rgba(250,29,22,1);
+  -moz-box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620;
+  -webkit-box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620;
   -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) !important;
   border-radius: 10em !important;
-  box-shadow: 0px 0px 0px 8px rgba(254,208,40,1), 0px 0px 8px 10px rgba(240,19,11,1), inset 0px 0px 8px 4px rgba(240,19,11,1), 0px 0px 98px 8px rgba(250,29,22,1), inset 0px 0px 98px 8px rgba(250,29,22,1) !important;
+  box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620 !important;
   height: 10em !important;
   transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) !important;
   width: 10em !important;
@@ -496,6 +507,10 @@
   font-family: lasenter !important;
   font-size: 3em !important;
   line-height: 1em !important;
+}
+
+#sign-one {
+  margin-left: -5vw;
   text-shadow: 
   .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
   .1vw 0vw .1vw #1041FF, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
@@ -521,6 +536,9 @@
 
 .fa-shirt{
   padding-left: 1em;
+  color: #ff00ff !important;
+  text-shadow: 
+  .1vw 0vw .25vw #ffffff, .2vw 0vw .25vw #ffffff, .4vw 0vw .25vw #ffffff !important;
 }
 
 #fiesta {
@@ -846,8 +864,13 @@
   padding: 0em 1em;
   font-size: 1.9em;
   font-weight: lighter;
-  color: var(--greenB);
-  text-shadow: 0 0 3px var(--greenD), 0 0 5px var(--greenD), 0 0 7px var(--greenD), 0 0 10px var(--greenD), 0 0 12px var(--greenD), 0 0 15px var(--greenD), 0 0 17px var(--greenD), 0 0 20px var(--greenD);
+  text-shadow: 
+  -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #011a10, 
+  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
+  -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
+  -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
+  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+  color: #A9FFDC;
 }
 
 #messImg{
