@@ -13,7 +13,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("demo").innerHTML =
-    "<div class='tiempos'>" + 
+    "<div class='tiempos'>" +
     days +
     "<p class='tiempoT'>Dias</p></div>" +
     "<div class='tiempos'>" +
@@ -40,7 +40,7 @@ function togglePlay() {
   isPlaying ? myAudio.pause() : myAudio.play();
   let imgAudio = document.getElementById("audioImg");
   if (imgAudio.innerHTML === "volume_up") {
-    imgAudio.innerHTML= "volume_down";
+    imgAudio.innerHTML = "volume_down";
   } else {
     imgAudio.innerHTML = "volume_up";
   }
@@ -53,7 +53,7 @@ myAudio.onpause = function () {
   isPlaying = false;
 };
 
-//display gift 
+//display gift
 function regalar() {
   let regalo = document.getElementById("regalo");
   let pedirRegalo = document.getElementById("pedirRegalo");
