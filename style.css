@@ -29,6 +29,7 @@
 }
 
 body{
+  
   filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
 -webkit-filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
 -moz-filter: grayscale(52%) sepia(27%) brightness(82%) hue-rotate(16deg) saturate(360%) opacity(93%) contrast(104%) invert(8%);
@@ -38,7 +39,7 @@ body{
   margin-top: 2vh;
   color: #A9FFDC;
   font-family: clipneon;
-  font-size: 8vw;
+  font-size: 10vw;
   line-height: 5vw;
   text-shadow: 0vw 0vw 3vw #F40A35;
   text-shadow: 
@@ -298,7 +299,8 @@ body{
 #portada {
   background: var(--black);
   background-size: contain;
-  background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(32,23,52,1) 100%);
+
 }
 
 #portada .content {
@@ -312,7 +314,11 @@ body{
   filter: saturate(1.5);
   width: fit-content;
   margin-bottom: 0;
-  margin-top: -5em;
+  margin-top: -2em;
+  background: url(Erica\ Anderson.gif);
+  height: 50vh;
+  width: 100vw;
+  margin-left: -0.1em;
 }
 
 #portada .sign {
@@ -321,7 +327,7 @@ body{
   font-size: 5em !important;
   font-weight: 500;
   margin-top: -15vh;
-  border-radius: 20px;
+  border-radius: 30%;
   position: relative;
   background-color: var(--black);
   padding-bottom: 0.3em;
@@ -455,8 +461,8 @@ body{
 
 #direccion {
   background: var(--black);
-  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
-  background-size: contain;
+  background-image: url("Erica\ Anderson.gif");
+  background-size: cover;
 }
 
 #direccion p {
@@ -492,11 +498,10 @@ body{
 .neon-circle {
   -moz-box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620;
   -webkit-box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620;
-  -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) !important;
   border-radius: 10em !important;
   box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620 !important;
   height: 10em !important;
-  transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) !important;
+  
   width: 10em !important;
   margin: 4em;
   margin-bottom: 0;
@@ -543,11 +548,14 @@ body{
 
 #fiesta {
   background: var(--black);
-  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
-  background-size: contain;
+  background-image: url("Erica\ Anderson.gif");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#fifle{
 }
 
 #fiesta .content{
@@ -555,9 +563,8 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 75vw;
-  height: 90vh;
-  border: 5px double var(--greenB);
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
   border-radius: 20px;
   box-shadow: inset 0px 0px 5px 5px var(--greenB), inset 0px 0px 10px 9px var(--greenD);
@@ -810,8 +817,11 @@ body{
 #asistencia {
   background: var(--black);
   padding: 2em;
-  background-image: url("73b207ec0441721eb06ea91f9e9a86ec.jpg");
-  background-size: contain;
+  background-image: url("Erica\ Anderson.gif");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h2asistencia{
@@ -824,13 +834,11 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
-  height: 90vh;
   border-radius: 20px;
-  border: 10px double var(--pinkB);
   padding: 1em;
-  color: var(--greenB);
+  height: 40vh;
   box-shadow: inset 0px 0px 5px 5px var(--orangeB), inset 0px 0px 10px 9px var(--pinkD);
 }
 
@@ -843,8 +851,17 @@ body{
   padding: 1em;
   border-radius: 10px;
   background:none;
-  border: 1px solid var(--pinkB);
-  box-shadow: inset 0px 0px 9px 2px var(--pinkD);
+  border: 1px solid white;
+  height: 30vh;
+  width: 50vw;
+  margin-top: 6em;
+  box-shadow: var(--orangeB) 0 -1px 4px, var(--greenB) 0 -2px 10px, var(--blueB) 0 -10px 20px, var(--pinkB) 0 -18px 40px, 5px 5px 15px 5px var(--black), inset 0px 0px 98px 8px #341841, inset 0px 0px 8px 4px #c081c2;
+}
+
+.fa-whatsapp{
+  color: #00CC2A !important;
+  transform: scale(3);
+  margin-left: 1em;
 }
 
 #confirmA {
@@ -899,7 +916,6 @@ body{
   height: 100vh;
   margin: 0;
   padding: 0;
-  border-bottom: 15px double var(--greenB);
   overflow: hidden;
 }
 
