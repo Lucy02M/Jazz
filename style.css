@@ -50,7 +50,7 @@ body{
   -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
 }
 
-.fa-heart-o {
+.fa-star-o {
   color: #FBB4FF;
   text-shadow: 
 -.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF, 
@@ -123,7 +123,6 @@ body{
 .restaurant{
   -ms-transform: rotate(-10deg); /* IE 9 */
   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-  color: #28D7FE;
   font-family: lasenter;
   font-size: 3em;
   transform: rotate(-10deg);
@@ -134,6 +133,7 @@ body{
   .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
   .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
   .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+  color: #28D7FE;
 }
 
 
@@ -192,7 +192,7 @@ body{
   font-size: 10vw;
   line-height: 6vw !important;
   margin-right: 2vw !important;
-  padding-top: 15vh;
+  margin-top: 1em;
   transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1) ;
   text-shadow: 
   .1vw 0vw .25vw #F0D6DE, .2vw 0vw .25vw #F0D6DE, .4vw 0vw .25vw #F0D6DE, 
@@ -219,7 +219,8 @@ body{
 
 .fa-angle-double-down{
   font-size: 3em;
-  margin-top: 2vh;
+  position: relative;
+  margin-top: 1em !important;
   animation: jackpots 1s 0s ease infinite;
   -moz-animation: jackpots 1s 0s ease infinite;
   /* Firefox */
@@ -227,6 +228,7 @@ body{
   /* Safari and Chrome */
   -o-animation: jackpots 1s 0s ease infinite;
   /* Opera */
+
 }
 
 /*characters images
@@ -501,10 +503,8 @@ body{
   border-radius: 10em !important;
   box-shadow: 0px 0px 0px 8px #d0fe28, 0px 0px 8px 10px #98f00b, inset 0px 0px 8px 4px #98f00b, 0px 0px 98px 8px #91ad14, inset 0px 0px 98px 8px #809620 !important;
   height: 10em !important;
-  
   width: 10em !important;
-  margin: 4em;
-  margin-bottom: 0;
+  margin-top: 2em;
 }
 
 .sign-one {
@@ -543,7 +543,7 @@ body{
   padding-left: 1em;
   color: #ff00ff !important;
   text-shadow: 
-  .1vw 0vw .25vw #ffffff, .2vw 0vw .25vw #ffffff, .4vw 0vw .25vw #ffffff !important;
+  .1vw 0vw .25vw #9c5353, .2vw 0vw .25vw #af8e8e, .4vw 0vw .25vw #ce9d9d !important;
 }
 
 #fiesta {
@@ -564,10 +564,13 @@ body{
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   background: radial-gradient(ellipse at center, #000000 0%, #201734 100%);
-  border-radius: 20px;
-  box-shadow: inset 0px 0px 5px 5px var(--greenB), inset 0px 0px 10px 9px var(--greenD);
+  margin-top: 0 !important;
+  border-top: 10px double #b7a4c0;
+  margin-top: 2vh !important;
+  box-shadow: inset 2px 15px 16px -9px #000000, inset -1px -25px 10px -5px #FEFAFF, inset 0px -29px 33px -3px #DE87FF;
+  
 }
 
 #fiesta * {
@@ -582,7 +585,6 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -5vh;
 }
 
 .fiesta *{
@@ -590,7 +592,8 @@ body{
 }
 
 .fiesta p {
-  color: var(--orangeB) !important;
+  color: white !important;
+  font-size: 1em !important;
 }
 
 .fiesta h3 {
@@ -617,12 +620,15 @@ body{
   max-width: 90vw;
   font-size: 0.7em;
   margin-bottom: 0;
+  color: white !important;
+  font-size: 1em !important;
 }
 
 #botones{
-  margin-top: -1em;
   display: flex;
   gap: 40px;
+  margin-top: -2vh !important;
+  padding-top: 0 !important;
 }
 
 #copy{
@@ -630,9 +636,9 @@ body{
   border-radius: 10px;
   width: 4em;
   height: 1.2em;
-  background:var(--orangeD);
-  border: 1px solid var(--orangeD);
-  box-shadow: 0px 0px 5px 1px var(--orangeD);
+  background:#482558;
+  border: 1px solid #67377e;
+  box-shadow: 0px 0px 5px 1px #67377e;
 }
 
 #copy:active {
@@ -646,8 +652,8 @@ body{
   width: 4em;
   height: 1.2em;
   background:none;
-  border: 1px solid var(--orangeD);
-  box-shadow: inset 0px 0px 5px 1px var(--orangeD);
+  border: 1px solid #67377e;
+  box-shadow: inset 0px 0px 5px 1px #67377e;
 }
 
 #gimgDiv {
@@ -686,6 +692,8 @@ body{
  /* animation: gift 2s ease 10s infinite normal forwards;*/
   margin-left: 0.6em;
   margin-bottom: 0;
+  margin-top: -1.6em !important;
+  padding-bottom: 0.4em !important;
   background: linear-gradient( red , blue);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
@@ -814,6 +822,14 @@ body{
 
 /*confirm section*/
 
+.three{
+  height: 130vh !important;
+}
+
+.four{
+  height: 70vh !important;
+}
+
 #asistencia {
   background: var(--black);
   padding: 2em;
@@ -840,6 +856,7 @@ body{
   padding: 1em;
   height: 40vh;
   box-shadow: inset 0px 0px 5px 5px var(--orangeB), inset 0px 0px 10px 9px var(--pinkD);
+  width: 100vw;
 }
 
 #asistencia button {
@@ -850,18 +867,36 @@ body{
   gap: 1em;
   padding: 1em;
   border-radius: 10px;
-  background:none;
+  background:transparent;
   border: 1px solid white;
   height: 30vh;
   width: 50vw;
   margin-top: 6em;
   box-shadow: var(--orangeB) 0 -1px 4px, var(--greenB) 0 -2px 10px, var(--blueB) 0 -10px 20px, var(--pinkB) 0 -18px 40px, 5px 5px 15px 5px var(--black), inset 0px 0px 98px 8px #341841, inset 0px 0px 8px 4px #c081c2;
+  animation: gradient 3s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes gradient {
+  from {
+    box-shadow: var(--orangeB) 0 -1px 4px, var(--greenB) 0 -2px 10px, var(--blueB) 0 -10px 20px, var(--pinkB) 0 -18px 40px, 5px 5px 15px 5px var(--black), inset 0px 0px 98px 8px #341841, inset 0px 0px 8px 4px #c081c2;
+    background: transparent;
+  }
+  to {
+    box-shadow: var(--orangeB) 0 -2px 2px, var(--greenB) 0 -1px 5px, var(--blueB) 0 -5px 10px, , 5px 5px 5px 5px var(--black);
+    background: #58266e;
+  }
 }
 
 .fa-whatsapp{
-  color: #00CC2A !important;
   transform: scale(3);
   margin-left: 1em;
+  text-shadow: 
+  -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #011a10, 
+  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
+  -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
+  -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
+  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+  color: #A9FFDC;
 }
 
 #confirmA {
@@ -869,6 +904,7 @@ body{
   color: var(--orangeB);
   font-size: 1.5em;
   font-family: 'Orbitron', sans-serif;
+  text-shadow: #1f0202 1px 1px 0;
 }
 
 .tenor-gif-embed {
